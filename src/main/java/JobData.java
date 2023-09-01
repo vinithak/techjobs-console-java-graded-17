@@ -38,7 +38,7 @@ public class JobData {
                 values.add(aValue);
             }
         }
-        Collections.sort(values);
+        Collections.sort(values,String.CASE_INSENSITIVE_ORDER);
         return values;
     }
 
