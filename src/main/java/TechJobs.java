@@ -92,7 +92,7 @@ public class TechJobs {
 
             // Print available choices
             for (int j = 0; j < choiceKeys.length; j++) {
-                System.out.println(j + " - " + choices.get(choiceKeys[j]));
+                System.out.println("" + j + " - " + choices.get(choiceKeys[j]));
             }
 
             if (in.hasNextInt()) {
@@ -123,15 +123,15 @@ public class TechJobs {
 
         if(!someJobs.isEmpty()) {
             for (HashMap<String, String> jobs : someJobs) {
-                System.out.println("*****");
+                System.out.println("\n*****");
                 for (Map.Entry<String, String> job : jobs.entrySet()) {
                     System.out.println(job.getKey() + ": " + job.getValue());
                 }
-                System.out.println("*****\n");
+                System.out.println("*****");
             }
         }
         else{
-            System.out.println("No Results");
+            System.out.print("No Results");
         }
     }
 }
